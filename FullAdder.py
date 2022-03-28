@@ -33,7 +33,7 @@ bits = [C_in, MSB, LSB]                                         # For storing th
 
 
 
-def fullAdder(bits):
+def fullAdder(bits):                                                         # For performing the Full-Binary Addition
     if bits[0] in (0, 1) and  bits[1] in (0, 1) and  bits[2] in (0, 1):
         return {'Carry_out': bits[0] & bits[1] | bits[2] & (bits[0] ^ bits[1]), 'Sum': bits[0] ^ bits[1] ^ bits[2]}
     else:
